@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <title>Улаанбадрах - 100 жил</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Дорноговь аймаг Улаанбадрах сум<br />Түүхт 100 жилийн ой</h1>
+
+  <ul id="program-list">
+    <li onclick="showDetail(0)">1. Хурдан морины уралдаан</li>
+    <li onclick="showDetail(1)">2. Бөхийн барилдаан</li>
+    <li onclick="showDetail(2)">3. Сур харваа</li>
+    <li onclick="showDetail(3)">4. Шагайн харваа</li>
+    <li onclick="showDetail(4)">5. Урлагийн тоглолт</li>
+    <li onclick="showDetail(5)">6. Наадмын нээлт</li>
+    <li onclick="showDetail(6)">7. Хаалтын үйл ажиллагаа</li>
+  </ul>
+
+  <!-- Модал -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <span onclick="closeModal()" class="close">&times;</span>
+      <h2 id="event-title"></h2>
+      <p><strong>Цаг:</strong> <span id="event-time"></span></p>
+      <p><strong>Байршил:</strong> <span id="event-location"></span></p>
+      <p><strong>Холбоо барих:</strong> <span id="event-contact"></span></p>
+      <img id="event-map" src="images/sum-map.jpg" alt="Сумын зураг" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
